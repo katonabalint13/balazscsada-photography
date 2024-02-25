@@ -1,0 +1,76 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 50px;
+}
+
+.top {
+  display: flex;
+  padding-left: 0.6rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  letter-spacing: -1px;
+  font-size: 50px;
+}
+
+.header-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  gap: 2rem;
+  font-size: 20px;
+}
+
+.header-link {
+  display: flex;
+  padding-right: 0.6rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  letter-spacing: 4px;
+  display: inline-block;
+  background-color: #fff;
+  color: #606060;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: black;
+}
+
+@media (min-width: 300px) {
+  .header-link {
+    padding: 2px;
+  }
+  .top {
+    font-size: 20px;
+  }
+  .header-link-container {
+    font-size: 10px;
+    gap: 1px;
+  }
+}
+
+@media (min-width: 800px) {
+  .top {
+    font-size: 30px;
+  }
+  .header-link-container {
+    font-size: 20px;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .top {
+    font-size: 50px;
+  }
+  .header-link-container {
+    font-size: 20px;
+    gap: 2rem;
+  }
+}
